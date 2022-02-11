@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+@keyframes anim1{
+        from{background-color:transparent}
+        to{background-color: var(--cor2);}
+}
+
+:root{
+    --cor6:#E1E5E2;
+    --cor0:#ebe5c5;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+    --fonte-padrao: Arial, Sans-serif, Verdana;
+    --fonte-destaque:'Bebas Neue', 'Times New Roman';
+    --fonte-android: 'Android', Times;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:var(--cor6);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00Aa\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    text-align: center;
+    min-height: 150px;
+    padding-top: 30px;
+}
+
+header h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+}
+header p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.329);
+}
+
+nav{
+    background-color: var(--cor5);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.596);
+    padding: 10px;
+    
+}
+
+nav > a {
+    color:var(--cor0);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+}
+
+main h1 {
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to left, var(--cor2),transparent);
+    font-size: 1.3em;
+    
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 1.9em;
+    font-size: 1em;
+}
+
+main strong{
+    font-weight: bold;
+    color: var(--cor3);
+    
+}
+
+main a{
+    text-decoration: none;
+    color:var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 4px;
+    border-radius: 10px;
+    border: solid 2px var(--cor4);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+    
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    display: block;
+    max-width: 350px;
+    margin: auto;
+    
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px  8px rgba(0, 0, 0, 0.356);
+    border: var(--cor4) solid;
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color:white;
+    font-family: var(--fonte-android);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;
+}
+
+aside > p > strong{
+    color:black;
+}
+
+aside > ul{
+    list-style-type: '\2705\00A0\00A0';
+    list-style-position: inside;
+    text-decoration: none;
+    columns: 2;
+}
+
+aside > p > a{
+    background-color: var(--cor4);
+    color: rgb(255, 247, 247);
+}
+
+footer {
+    background-color: var(--cor4);
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a{
+    background-color: var(--cor2);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+div.video{
+   
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59% ;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
